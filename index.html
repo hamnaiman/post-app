@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Application</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Home Page -->
+        <div id="homePage">
+            <h1 class="h1">Post Crave</h1>
+            <p class="p1">Express your Thoughts here...</p>
+            <p class="p1">بول کہ لب آزاد ہیں تیرے</p>
+            <button id="signupButton">Sign Up</button>
+        </div>
+
+        <!-- Sign-Up Page -->
+        <div id="signupPage" class="hidden">
+            <h1 class="p1">Sign Up</h1>
+            <form  id="signupForm" class="signup-form">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required> <br><br>
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email" required> <br><br>
+                <label for="password">Password:</label>
+                <input type="number" name="password" id="password" required> <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!-- Post Page -->
+        <div id="postPage" class="hidden">
+            <h1 class="p1">Post Feed</h1>
+            <form id="postForm">
+                <img src="images/dp.jpg" class="img">
+                <textarea class="postText" id="postContent" placeholder="What's on your mind?" required></textarea>
+                <input type="file" id="postImage" accept="image/*">
+                <button type="submit">Post</button>
+            </form>
+            <div id="postsContainer" class="postContainer">
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
